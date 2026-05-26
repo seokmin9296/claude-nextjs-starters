@@ -36,6 +36,11 @@ export default function Home() {
         </div>
 
         <div className="flex gap-4 justify-center flex-wrap">
+          <Link href="/example">
+            <Button size="lg">
+              예제 페이지
+            </Button>
+          </Link>
           <Link href="/auth/login">
             <Button size="lg">
               로그인 예제
