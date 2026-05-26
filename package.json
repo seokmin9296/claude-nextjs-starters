@@ -1,0 +1,38 @@
+﻿{
+    "version":  "0.1.0",
+    "name":  "claude-nextjs-starter",
+    "scripts":  {
+                    "test:watch":  "jest --watch",
+                    "build":  "next build",
+                    "lint":  "next lint",
+                    "start":  "next start",
+                    "dev":  "next dev",
+                    "test":  "jest"
+                },
+    "devDependencies":  {
+                            "@types/react":  "^18.2.46",
+                            "typescript":  "^5.3.3",
+                            "eslint":  "^8.55.0",
+                            "@testing-library/jest-dom":  "^6.1.5",
+                            "postcss":  "^8.4.32",
+                            "tailwindcss":  "^3.4.1",
+                            "jest-environment-jsdom":  "^29.7.0",
+                            "@testing-library/react":  "^14.1.2",
+                            "@types/jest":  "^29.5.11",
+                            "@types/node":  "^20.10.6",
+                            "eslint-config-next":  "^15.0.0",
+                            "jest":  "^29.7.0",
+                            "autoprefixer":  "^10.4.16",
+                            "@types/react-dom":  "^18.2.18"
+                        },
+    "dependencies":  {
+                         "react-dom":  "^18.3.1",
+                         "lucide-react":  "^0.408.0",
+                         "tailwind-merge":  "^2.4.0",
+                         "class-variance-authority":  "^0.7.0",
+                         "clsx":  "^2.1.1",
+                         "react":  "^18.3.1",
+                         "next":  "^15.0.0"
+                     },
+    "private":  true
+}
