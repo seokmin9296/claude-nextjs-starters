@@ -1,15 +1,15 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+import Link from "next/link";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 export function Navbar() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const handleLogout = () => {
-    setIsAuthenticated(false)
-  }
+    setIsAuthenticated(false);
+  };
 
   return (
     <nav className="bg-white border-b border-slate-200 sticky top-0 z-50">
@@ -23,31 +23,31 @@ export function Navbar() {
           </Link>
 
           <div className="flex items-center space-x-4">
-            <Link href="/" className="text-sm font-medium text-slate-600 hover:text-slate-900">
+            <Link
+              href="/"
+              className="text-sm font-medium text-slate-600 hover:text-slate-900"
+            >
               홈
             </Link>
-            <Link href="/dashboard" className="text-sm font-medium text-slate-600 hover:text-slate-900">
+            <Link
+              href="/dashboard"
+              className="text-sm font-medium text-slate-600 hover:text-slate-900"
+            >
               대시보드
             </Link>
 
             {isAuthenticated ? (
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={handleLogout}
-              >
+              <Button variant="outline" size="sm" onClick={handleLogout}>
                 로그아웃
               </Button>
             ) : (
               <Link href="/auth/login">
-                <Button size="sm">
-                  로그인
-                </Button>
+                <Button size="sm">로그인</Button>
               </Link>
             )}
           </div>
         </div>
       </div>
     </nav>
-  )
+  );
 }

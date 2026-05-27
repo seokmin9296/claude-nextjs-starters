@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -10,7 +10,8 @@ export default function Home() {
         </h1>
 
         <p className="text-xl text-slate-600 mb-8">
-          Next.js 15 + Tailwind CSS + shadcn/ui를 기반으로 한 빠른 웹 애플리케이션 프로토타이핑용 Starter Kit
+          Next.js 15 + Tailwind CSS + shadcn/ui를 기반으로 한 빠른 웹
+          애플리케이션 프로토타이핑용 Starter Kit
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
@@ -37,14 +38,10 @@ export default function Home() {
 
         <div className="flex gap-4 justify-center flex-wrap">
           <Link href="/example">
-            <Button size="lg">
-              예제 페이지
-            </Button>
+            <Button size="lg">예제 페이지</Button>
           </Link>
           <Link href="/auth/login">
-            <Button size="lg">
-              로그인 예제
-            </Button>
+            <Button size="lg">로그인 예제</Button>
           </Link>
           <Link href="/dashboard">
             <Button size="lg" variant="outline">
@@ -55,10 +52,12 @@ export default function Home() {
 
         <div className="mt-12 pt-8 border-t border-slate-200">
           <p className="text-sm text-slate-500">
-            빠른 시작: <code className="bg-slate-200 px-2 py-1 rounded">npm run dev</code> 명령으로 개발 서버를 시작하세요.
+            빠른 시작:{" "}
+            <code className="bg-slate-200 px-2 py-1 rounded">npm run dev</code>{" "}
+            명령으로 개발 서버를 시작하세요.
           </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
